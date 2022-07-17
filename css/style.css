@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    top: 0px;
+}
+
+.addAnimeBtnDiv {
+    
+}
+
+footer {
+    bottom: -100px;
+}
