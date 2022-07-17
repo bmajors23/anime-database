@@ -9,15 +9,24 @@ function Anime(title, studio, episodeCount, hasWatched) {
 
 // Query Selectors
 
-const addBtn = document.querySelector(".login");
+const addBtn = document.querySelector(".addAnimeBtn");
+const overlay = document.getElementById("overlay");
+const animeForm = document.getElementById("addAnimeForm")
 
 
 // Button actions
 
-addBtn.addEventListener("click", animeInput);
+addBtn.addEventListener("click", openAnimeForm);
+overlay.addEventListener("click", closeAnimeForm);
 
 // Functions
 
-function animeInput() {
-    console.log("hello");
+function openAnimeForm() {
+    animeForm.classList.add("active");
+    overlay.classList.add("active");
+}
+
+function closeAnimeForm() {
+    animeForm.classList.remove("active");
+    overlay.classList.remove("active");
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js" defer></script>
 </head>
-<body>
+<body>   
     <header>
         <div class="headerContainer">
             <h3>Anime Database</h3>
@@ -17,7 +17,19 @@
     </header>
     <div class="addAnimeBtnDiv">
         <button class="addAnimeBtn">+ Add Anime</button>
+        <div id="addAnimeForm">
+            <h3>Add Anime</h3>
+            <input type="text" class="titleInput" id="title" placeholder="Title">
+            <input type="text" class="studioInput" id="studio" placeholder="Studio">
+            <input type="text" class="episodeCountInput" id="episodeCount" placeholder="Episode Count">
+            <div class="watched">
+                <h4>Watched?</h4>
+                <input type="checkbox" class="watchedInput" id="hasWatched">
+            </div>
+            <button class="submit">Submit</button>
+        </div>
     </div>
+    <div id="overlay"></div>
     <footer><p>Created by Bryce Majors</p></footer>
 </body>
 </html>
