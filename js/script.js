@@ -50,7 +50,10 @@ function closeAnimeForm() {
 }
 
 function clearInput() {
-
+    document.getElementById("title").value = "";
+    document.getElementById("studio").value = "";
+    document.getElementById("episodeCount").value = "";
+    document.getElementById("hasWatched").value = 0;
 }
 
 function createAnime() {
@@ -66,7 +69,7 @@ function createAnime() {
 }
 
 function displayAnime() {
-    clearAnime();
+    destroyList();
     for (let i = 0; i < anime_list.length; i++) {
         const newDiv = document.createElement("div");
         newDiv.classList.add("box");
